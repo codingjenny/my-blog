@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://chanlee.fun/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Chan Lee\'s Blog'
 theme = 'ananke'
