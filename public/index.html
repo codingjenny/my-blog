@@ -48,8 +48,8 @@
 
   <meta itemprop="name" content="Chan Lee 27">
   <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
-  <meta itemprop="datePublished" content="2024-10-29T13:00:49+08:00">
-  <meta itemprop="dateModified" content="2024-10-29T13:00:49+08:00">
+  <meta itemprop="datePublished" content="2024-10-30T13:23:31+08:00">
+  <meta itemprop="dateModified" content="2024-10-30T13:23:31+08:00">
   <meta itemprop="wordCount" content="26">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Chan Lee 27">
@@ -177,21 +177,78 @@
       
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/posts/my-third-post/" class="db grow">
+            <img src="http://localhost:1313/images/osakacastle.jpg" class="img" alt="image from My Third Post">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/my-third-post/" class="color-inherit dim link">
+            My Third Post
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          <h2 id="常用-markdown-語法">常用 Markdown 語法</h2>
+<p>Hi, I&rsquo;m Ying.</p>
+        </div>
+          <a href="/posts/my-third-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+            </div>
+          
+            <div class="relative w-100 mb4">
+              
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/posts/my-second-post/" class="db grow">
-            <img src="http://localhost:1313/images/osakacastle.jpg" class="img" alt="image from My Second Post">
+            <img src="http://localhost:1313/images/osakacastle.jpg" class="img" alt="image from Hugo - 快速了解 Hugo 使用方法">
           </a>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/my-second-post/" class="color-inherit dim link">
-            My Second Post
+            Hugo - 快速了解 Hugo 使用方法
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <h2 id="introduction">Introduction</h2>
-<p>This is <strong>bold</strong> texts, and this is <em>emphasized</em> text.</p>
-<p>Visit the <a href="https://gohugo.io">Hugo</a> website!</p>
+          <h2 id="hugo---快速了解-hugo-使用方法">Hugo - 快速了解 Hugo 使用方法</h2>
+<p>Hugo 是一個靜態網站生成器，可以用來快速建立個人網站。</p>
+<p>在 Hugo 的官網上可以找到 <a href="https://gohugo.io/getting-started/quick-start/">Quick start</a> 的教學。本篇的存在意義是記錄我學習 Hugo 的過程，以及給不想直接看英文檔案的人參考 😎。</p>
+<p>透過本篇的教學，你將會學到：</p>
+<ol>
+<li>如何安裝 Hugo</li>
+<li>如何建立一個新的網站</li>
+<li>如何新增文章</li>
+<li>如何新增頁面</li>
+<li>如何使用 Hugo 的 theme</li>
+</ol>
+<p>把這幾項做完，就可以差不多了解 Hugo 的使用方法。</p>
+<hr>
+<h3 id="安裝-hugo">安裝 Hugo</h3>
+<p>這裡只會講 Mac OS 安裝 Hugo 的方法，其他作業系統的安裝方法可以參考 <a href="https://gohugo.io/getting-started/installing/">Hugo Installation</a>。</p>
+<p>我是用 Homebrew 安裝 Hugo，如果沒有 Homebrew 可以參考 <a href="https://brew.sh/">Homebrew Installation</a>，內建繁體中文翻譯。</p>
+<p>Homebrew 安裝完後，就可以用以下指令安裝 Hugo：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><p>想確認 Hugo 是否安裝成功，可以執行以下指令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><p>如果出現版本資訊，就代表安裝成功。類似：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo v0.136.5+extended darwin/arm64 BuildDate<span style="color:#f92672">=</span>2024-10-24T12:26:27Z VendorInfo<span style="color:#f92672">=</span>brew
+</span></span></code></pre></div><hr>
+<h3 id="建立一個新的網站">建立一個新的網站</h3>
+<p>我會先切換終端機到想放置資料夾的位置，但如果你就是想放在目前的位置，就直接執行以下指令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># chanlee-blog 是我自己取的，可以改成你想要的資料夾名稱</span>
+</span></span><span style="display:flex;"><span>hugo new site chanlee-blog
+</span></span></code></pre></div><p>這個指令會直接在根目錄建立一個名為 chanlee-blog 的資料夾，裡面會有建立好的檔案結構。</p>
         </div>
           <a href="/posts/my-second-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
